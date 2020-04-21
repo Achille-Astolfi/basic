@@ -9,9 +9,6 @@ package com.example.basic;
  */
 
 public class LauraSouza {
-	
-	public String hiGuys(String s) {
-		return s = "Hi guys";
-	}
+
 
 }
