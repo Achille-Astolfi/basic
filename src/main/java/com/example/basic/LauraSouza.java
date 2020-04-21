@@ -3,20 +3,15 @@ package com.example.basic;
 /**
  * 
  * @author lauradealmeidasouza
- * @version 2
+ * @version 1
  * @since 1 
  *
  */
 
 public class LauraSouza {
 	
-	/**
-	 * @since 2 
-	 * 
-	 */
-	
-	public static void main(String[] args) {
-		
+	public String hiGuys(String s) {
+		return s = "Hi guys";
 	}
 
 }
