@@ -2,18 +2,16 @@ package com.example.basic;
 
 /**
  * 
- * @author Stefano Pozzobon
- * @version 2 
+ * @author Achille Astolfi
+ * @version 2
  * @since 1
- *
  */
-public class StefanoPozzobon {
+public class AchilleAstolfi {
 	/**
 	 * @since 2
 	 * @return
 	 */
 	public String greet() {
-		return "Hello Guys!";
+		return "Hello World!";
 	}
 }
-
