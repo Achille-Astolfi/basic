@@ -15,5 +15,9 @@ public class StefanoPozzobon {
 	public String greet() {
 		return "Hello Guys!";
 	}
+	public void ninja() {
+		System.out.println("Sono un metodo sotto copertura. Shhhhh....");
+	}
+	
 }
 
