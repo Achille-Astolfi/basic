@@ -6,7 +6,9 @@ package com.example.basic;
  *
  */
 public class Jacopo {
-
+	
+	// NOTE GIOVANNI
+	
 		public int intAdd(int a,int b){
 			int sum=a+b;
 			return sum;
