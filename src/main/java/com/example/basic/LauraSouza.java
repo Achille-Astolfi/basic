@@ -22,6 +22,7 @@ public class LauraSouza {
 	public String hiGuys() {
 		return "Hi Guys";
 	}
+	
 	// Shine on you crazy diamond
 
 }
