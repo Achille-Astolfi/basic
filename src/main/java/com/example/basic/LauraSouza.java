@@ -10,6 +10,11 @@ package com.example.basic;
 
 public class LauraSouza {
 	
+	/**
+	 * @since 2
+	 * @return
+	 */
+	
 	public String hiGuys() {
 		return "Hi Guys";
 	}
