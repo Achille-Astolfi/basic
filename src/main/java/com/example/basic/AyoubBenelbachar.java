@@ -3,7 +3,7 @@ package com.example.basic;
 
 public class AyoubBenelbachar {
 	
-	public static void main(String[] args) 
+	public void saluta()
 	{
 		System.out.println("Aspettando il 4 maggio");
 		
