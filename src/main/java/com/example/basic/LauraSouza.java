@@ -10,8 +10,8 @@ package com.example.basic;
 
 public class LauraSouza {
 	
-	public String hiGuys(String s) {
-		return s = "Hi Guys";
+	public String hiGuys() {
+		return "Hi Guys";
 	}
 
 
