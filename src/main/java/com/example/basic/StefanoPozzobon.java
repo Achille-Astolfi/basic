@@ -18,8 +18,11 @@ public class StefanoPozzobon {
 	public String greet() {
 		return "Hello Guys!";
 	}
+	public String ok2() {
+		return "ok2";
 	
 	
 	}
+}
 
 
