@@ -9,7 +9,11 @@ package com.example.basic;
  */
 
 public class LauraSouza {
-	
+	// new method
+	public int foo(int a, int b) {
+		int sum = a + b;
+		return sum;
+	}
 	/**
 	 * @since 2
 	 * @return
