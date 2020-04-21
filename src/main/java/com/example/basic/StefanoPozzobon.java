@@ -8,6 +8,9 @@ package com.example.basic;
  *
  */
 public class StefanoPozzobon {
+	public String ok() {
+		return "ok";
+	}
 	/**
 	 * @since 2
 	 * @return
@@ -15,9 +18,8 @@ public class StefanoPozzobon {
 	public String greet() {
 		return "Hello Guys!";
 	}
-	public void ninja() {
-		System.out.println("Sono un metodo sotto copertura. Shhhhh....");
-	}
 	
-}
+	
+	}
+
 
