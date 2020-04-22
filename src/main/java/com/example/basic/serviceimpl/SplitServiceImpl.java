@@ -15,8 +15,9 @@ public class SplitServiceImpl implements SplitService{
 @Autowired
 private SplitService splitService;
 
+@Override
 @PostMapping("/split")	
-	public List<String> split(String record, String separtor){
+	public List<String> splitString(String record, String separtor){
 		String sep=separtor;
 		String complete=record;
 		String[] stringList=complete.split(sep);		

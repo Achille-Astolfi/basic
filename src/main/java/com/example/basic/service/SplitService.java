@@ -1,6 +1,8 @@
 package com.example.basic.service;
 
+import java.util.List;
+
 public interface SplitService {
 
-	String splitString(String record, String separator);
+	List<String> splitString(String record, String separator);
 }
