@@ -5,14 +5,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class SquareProtocol {
 
 		@JsonProperty("square")
-		private float square;
+		private double square;
 		
 		//GETTERS AND SETTERS
 		
-		public float getSquare() {
+		public double getSquare() {
 			return square;
 		}
-		public void setSquare(float square) {
+		public void setSquare(double square) {
 			this.square = square;
 		}
 }
