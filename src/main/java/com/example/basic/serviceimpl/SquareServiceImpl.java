@@ -9,11 +9,9 @@ import com.example.basic.service.SquareService;
 
 public class SquareServiceImpl implements SquareService{
 	
-	public SquareDto square(double n)
+	public double square(double n)
 	{
-		SquareDto s= new SquareDto();
-		s.setValue(n*n);
-		return s;
+		return n*n;
 	}
 	
 }
