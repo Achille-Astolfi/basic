@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class JoinProtocol extends ResourceSupport{
 	@JsonProperty("join")
 	private String join ;
-	
+
 	public JoinProtocol() {
 		this.add(ControllerLinkBuilder.linkTo(JoinController.class).withSelfRel());
 	}
