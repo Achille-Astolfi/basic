@@ -19,13 +19,13 @@ public class SquareController {
 	@Autowired
 	private SquareService squareService;
 	
-	@PostMapping("/square/{num}")
+	@PostMapping("/square")
 	public ResponseEntity<SquareProtocol> sum(@RequestBody SquareDto squareDto) {
 		
 		SquareProtocol squareProtocol = new SquareProtocol();
 		HttpStatus status = null;
 		try {
-			squareProtocol.setSquare(squareDto.getValue());
+			squareProtocol.setSquare(squareService.square(squareDto.getValue()));
 			status = HttpStatus.OK;
 		} catch (Exception e) {
 			status = HttpStatus.INTERNAL_SERVER_ERROR;
