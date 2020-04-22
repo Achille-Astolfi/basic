@@ -3,7 +3,9 @@ package com.example.basic.protocol;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SplitProtocol {
+import org.springframework.hateoas.ResourceSupport;
+
+public class SplitProtocol extends ResourceSupport {
 	
 	private List<String> cells;
 	
