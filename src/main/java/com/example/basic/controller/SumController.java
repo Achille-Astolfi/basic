@@ -13,12 +13,13 @@ import com.example.basic.protocol.SumProtocol;
 import com.example.basic.service.SumService;
 
 @RestController
+@RequestMapping("/sum")
 public class SumController {
 	
 	@Autowired
 	private SumService sumService;
 	
-	@PostMapping("/sum")
+	@PostMapping
 	public ResponseEntity<SumProtocol> sum(@RequestBody SumDto sumDto) {
 		
 		SumProtocol protocol = new SumProtocol();

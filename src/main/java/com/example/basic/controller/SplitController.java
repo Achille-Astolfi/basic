@@ -21,13 +21,13 @@ import com.example.basic.serviceimpl.SplitServiceImpl;
 
 
 @RestController
-@Controller
+@RequestMapping("/split")
 public class SplitController {
 
 	@Autowired
 	private SplitService splitService;
 	
-	@PostMapping("/split")
+	@PostMapping
 	public ResponseEntity<SplitProtocol> split( @RequestBody SplitDto splitDto) {
 		
 		SplitProtocol protocol = new SplitProtocol();

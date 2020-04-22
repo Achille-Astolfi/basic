@@ -5,18 +5,21 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.example.basic.dto.SquareDto;
 import com.example.basic.protocol.SquareProtocol;
 import com.example.basic.service.SquareService;
 
 @RestController
+@RequestMapping("/square")
 public class SquareController {
 
 	@Autowired
 	private SquareService squareService;
 	
-	@PostMapping("/square")   // {"value":7.0}
+	@PostMapping   // {"value":7.0}
 	public ResponseEntity<SquareProtocol> square(@RequestBody SquareDto squareDto) {
 		SquareProtocol squareProtocol = new SquareProtocol();
 		HttpStatus status = null;
