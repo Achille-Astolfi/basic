@@ -23,7 +23,7 @@ public class SquareController {
 		SquareProtocol squareProtocol = new SquareProtocol();
 		HttpStatus status = null;
 		try {
-			squareProtocol.setSquare(squareService.square(num).getValue());
+			squareProtocol.setSquare(squareService.square(num));
 			status = HttpStatus.OK;
 		} catch (Exception e) {
 			status = HttpStatus.INTERNAL_SERVER_ERROR;
