@@ -4,6 +4,7 @@ import org.springframework.hateoas.ResourceSupport;
 import org.springframework.hateoas.mvc.ControllerLinkBuilder;
 
 import com.example.basic.controller.JoinController;
+import com.example.basic.controller.SumController;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SumProtocol extends ResourceSupport {
@@ -13,7 +14,7 @@ public class SumProtocol extends ResourceSupport {
 	
 
     public SumProtocol() {
-    	this.add(ControllerLinkBuilder.linkTo(JoinController.class).withSelfRel());
+    	this.add(ControllerLinkBuilder.linkTo(SumController.class).withSelfRel());
     }
     
 	public double getSum() {
