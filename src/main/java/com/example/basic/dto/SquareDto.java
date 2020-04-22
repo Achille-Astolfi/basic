@@ -1,16 +1,15 @@
 package com.example.basic.dto;
 
-public class DtoSquare {
+public class SquareDto {
 	
-	int value;
+	float value;
 
 	// GETTER E SETTER
-	public int getValue() {
+	public float getValue() {
 		return value;
 	}
 
-	public void setValue(int value) {
+	public void setValue(float value) {
 		this.value = value;
 	}
-
 }
