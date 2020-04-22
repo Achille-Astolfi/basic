@@ -13,12 +13,14 @@ public class SplitProtocol {
 		
 	}
 
-	public List<String> getS() {
+	public List<String> getCells() {
 		return cells;
 	}
 
-	public void setS(List<String> cells) {
+	public void setCells(List<String> cells) {
 		this.cells = cells;
 	}
+
+
 	
 }
