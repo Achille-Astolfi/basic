@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.basic.dto.SquareDto;
@@ -19,12 +20,11 @@ public class SquareController {
 	private SquareService squareService;
 	
 	@PostMapping("/square/{num}")
-	public ResponseEntity<SquareProtocol> sum(@PathParam("num") double num) {
+	public ResponseEntity<SquareProtocol> sum(@RequestBody SquareDto squareDto) {
+		
 		SquareProtocol squareProtocol = new SquareProtocol();
-		SquareDto squareDto = new SquareDto();
 		HttpStatus status = null;
 		try {
-			squareDto.setValue(num);
 			squareProtocol.setSquare(squareDto.getValue());
 			status = HttpStatus.OK;
 		} catch (Exception e) {
