@@ -4,7 +4,8 @@ import org.springframework.stereotype.Service;
 // Commento
 import com.example.basic.service.JoinService;
 
-@Service("joinService")
+
+@Service ("joinService")
 public class JoinServiceImpl implements JoinService {
 
 	@Override
