@@ -1,4 +1,4 @@
-package com.example.basic.services;
+package com.example.basic.service;
 
 public interface SplitService {
 
