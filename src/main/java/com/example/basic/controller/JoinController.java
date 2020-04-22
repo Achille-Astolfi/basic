@@ -6,11 +6,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.example.basic.dto.JoinDto;
 import com.example.basic.protocol.JoinProtocol;
 import com.example.basic.service.JoinService;
 
-@Controller
+@RestController
 public class JoinController {
 	
 	@Autowired
