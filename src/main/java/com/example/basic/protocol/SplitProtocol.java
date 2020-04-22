@@ -1,21 +1,24 @@
 package com.example.basic.protocol;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SplitProtocol {
 	
-	private String[] s;
+	private List<String> cells;
 	
 	public SplitProtocol ()
 	{
-		s = new String[3];
+		cells = new ArrayList<String>();
 		
 	}
 
-	public String[] getS() {
-		return s;
+	public List<String> getS() {
+		return cells;
 	}
 
-	public void setS(String[] s) {
-		this.s = s;
+	public void setS(List<String> cells) {
+		this.cells = cells;
 	}
 	
 }
