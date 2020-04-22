@@ -3,7 +3,7 @@ package com.example.basic.protocol;
 import org.springframework.hateoas.ResourceSupport;
 import org.springframework.hateoas.mvc.ControllerLinkBuilder;
 
-import com.example.basic.controller.JoinController;
+
 import com.example.basic.controller.SumController;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
