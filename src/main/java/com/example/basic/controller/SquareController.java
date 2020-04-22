@@ -20,7 +20,7 @@ public class SquareController {
 	private SquareService squareService;
 	
 	@PostMapping("/square")
-	public ResponseEntity<SquareProtocol> sum(@RequestBody SquareDto squareDto) {
+	public ResponseEntity<SquareProtocol> square(@RequestBody SquareDto squareDto) {
 		
 		SquareProtocol squareProtocol = new SquareProtocol();
 		HttpStatus status = null;
