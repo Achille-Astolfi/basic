@@ -27,9 +27,6 @@ public class SplitController {
 	@Autowired
 	private SplitService splitService;
 
-
-
-	
 	
 	@PostMapping("/split")
 	public ResponseEntity<SplitProtocol> split( @RequestBody SplitDto splitDto) {
