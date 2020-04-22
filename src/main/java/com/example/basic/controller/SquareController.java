@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
+import com.example.basic.dto.SquareDto;
 import com.example.basic.protocol.SquareProtocol;
 import com.example.basic.service.SquareService;
 
@@ -21,9 +21,11 @@ public class SquareController {
 	@PostMapping("/square/{num}")
 	public ResponseEntity<SquareProtocol> sum(@PathParam("num") double num) {
 		SquareProtocol squareProtocol = new SquareProtocol();
+		SquareDto squareDto = new SquareDto();
 		HttpStatus status = null;
 		try {
-			squareProtocol.setSquare(squareService.square(num));
+			squareDto.setValue(num);
+			squareProtocol.setSquare(squareDto.getValue());
 			status = HttpStatus.OK;
 		} catch (Exception e) {
 			status = HttpStatus.INTERNAL_SERVER_ERROR;
