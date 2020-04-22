@@ -1,8 +1,10 @@
 package com.example.basic.protcol;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class SquareProtocol {
 
-		/*square=value*value*/
+		@JsonProperty("square")
 		private float square;
 		
 		//GETTERS AND SETTERS
