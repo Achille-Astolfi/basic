@@ -28,8 +28,6 @@ public class SplitController {
 	private SplitService splitService;
 
 
-
-	
 	
 	@PostMapping("/split")
 	public ResponseEntity<SplitProtocol> split( @RequestBody SplitDto splitDto) {

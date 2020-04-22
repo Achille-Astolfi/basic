@@ -1,7 +1,10 @@
 package com.example.basic.serviceimpl;
+import org.springframework.stereotype.Service;
+
 // Commento
 import com.example.basic.service.JoinService;
 
+@Service("joinService")
 public class JoinServiceImpl implements JoinService {
 
 	@Override
