@@ -1,7 +1,5 @@
 package com.example.basic.controller;
 
-import javax.websocket.server.PathParam;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,10 +16,10 @@ public class SquareController {
 
 	@Autowired
 	private SquareService squareService;
-	
-	@PostMapping("/square")
+
+	@PostMapping("/square/{qualcosa}")
 	public ResponseEntity<SquareProtocol> square(@RequestBody SquareDto squareDto) {
-		
+
 		SquareProtocol squareProtocol = new SquareProtocol();
 		HttpStatus status = null;
 		try {
