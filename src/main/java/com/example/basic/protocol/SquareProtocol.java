@@ -1,5 +1,5 @@
 package com.example.basic.protocol;
-
+// COMMENTO FITTIZIO
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SquareProtocol {
