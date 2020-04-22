@@ -19,7 +19,7 @@ public class SquareController {
 	private SquareService squareService;
 	
 	@PostMapping("/square/{num}")
-	public ResponseEntity<SquareProtocol> sum(@PathParam("num") float num) {
+	public ResponseEntity<SquareProtocol> sum(@PathParam("num") double num) {
 		SquareProtocol squareProtocol = new SquareProtocol();
 		HttpStatus status = null;
 		try {
