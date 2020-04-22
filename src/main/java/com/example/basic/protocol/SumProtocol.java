@@ -1,8 +1,10 @@
 package com.example.basic.protocol;
 
+import org.springframework.hateoas.ResourceSupport;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class SumProtocol {
+public class SumProtocol extends ResourceSupport {
 
     @JsonProperty("sum")
 	private double sum;
