@@ -1,8 +1,11 @@
 package com.example.basic.protocol;
+
+import org.springframework.hateoas.ResourceSupport;
+
 // COMMENTO FITTIZIO
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class SquareProtocol {
+public class SquareProtocol extends ResourceSupport{
 
 		@JsonProperty("square")
 		private double square;

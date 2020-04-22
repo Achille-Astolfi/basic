@@ -1,5 +1,7 @@
 package com.example.basic.dto;
 
+
+
 public class SquareDto {
 	 
 	
